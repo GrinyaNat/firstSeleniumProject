@@ -8,16 +8,16 @@ import org.testng.annotations.Test;
 
 public class OpenSiteTest2 {
 
-    WebDriver driver2;
+    WebDriver driver;
 
     @BeforeMethod
 
     public void setUp(){
-        driver2 = new ChromeDriver();
-        driver2.navigate().to("https://demowebshop.tricentis.com/");
-        driver2.navigate().back();
-        driver2.navigate().forward();
-        driver2.navigate().refresh();
+        driver = new ChromeDriver();
+        driver.navigate().to("https://demowebshop.tricentis.com/");
+        driver.navigate().back();
+        driver.navigate().forward();
+        driver.navigate().refresh();
     }
 
     @Test
@@ -29,7 +29,7 @@ public class OpenSiteTest2 {
     @AfterMethod
 
     public void tearDown(){
-        driver2.quit();
+        driver.quit();
 
     }
 
